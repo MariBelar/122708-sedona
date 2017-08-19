@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
         <nav class="page-header-navigation">
             <div class="logo">
-                <a><img src="" alt="Седона.Логотип" width="" height=""></a>
+                <a><img src="img/logo.png" alt="Седона.Логотип" width="138" height="70"></a>
             </div>
             <ul class="page-nav">
                 <li>
@@ -27,14 +28,14 @@
         </nav>
     </header>
     <main class="index-main">
-        <h1 class="index-main-header">Седона</h1>
+        <h1 class="hidden">Седона</h1>
         <p class="subheader">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <section class="features">
-            <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</h2><!---->
-            <ol class="features-list"><!-- -->
-                <li class="">
+            <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</h2>
+            <ol class="features-list">
+                <li class="feature-item-img">
                     <h3>Настоящий городок</h3>
-                    <img src="img/" alt="" width="" height="">
+                    <img src="img/index-1.jpg" alt="городок Седона" width="" height="">
                     <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
                 </li>
             </ol>
@@ -53,9 +54,9 @@
                 </li>
             </ul>
             <ol class="features-list" start="2">
-                <li class="">
+                <li class="feature-item-img">
                     <h3>Там есть Мост дьявола</h3>
-                    <img src="img/" alt="" width="" height="">
+                    <img src="img/index-2.jpg" alt="Мост дьявола" width="" height="">
                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </li>
                 <li>
@@ -63,11 +64,11 @@
                     <p>Все достопримечательности находятся очень близко</p>
                 </li>
                 <li>
-                    <h3>Красивая дорога</h3>
+                    <h3 class="feature-header">Красивая дорога</h3>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
                 <li>
-                    <h3>Мало туристов</h3>
+                    <h3 class="feature-header">Мало туристов</h3>
                     <p>Большинство едет в Гранд Каньон и толпится там</p>
                 </li>
             </ol>
@@ -77,21 +78,33 @@
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <button type="button" class="close-search-form btn">Поиск гостиницы в Седоне</button>
             <form class="index-search-form" action="#" method="get">
-                <label for="check-in-data">Дата заезда:</label>
-                <input type="text" name="check-in-data" id="check-in-data" value="24 Апреля 2017">
-                <button type="button" class="calendar" id="calendar-1"></button>
-                <label for="check-out-data">Дата выезда:</label>
-                <input type="text" name="check-out-data" id="check-out-data" value="4 июля 2017">
-                <button type="button" class="calendar" id="calendar-2"></button>
-                <label>Взрослые:
-                    <input type="number" name="adult" value="2"><!-- -->
+                <label for="check-in-data">Дата заезда:
+                    <input type="text" name="check-in-data" id="check-in-data" placeholder="24 Апреля 2017">
+                    <button type="button" class="calendar" id="calendar-1"></button>
+                </label>
+                <label for="check-out-data">Дата выезда:
+                    <input type="text" name="check-out-data" id="check-out-data" placeholder="4 июля 2017">
+                    <button type="button" class="calendar" id="calendar-2"></button>
+                </label>
+                <!--<label>Взрослые:
+                    <input type="number" name="adult" value="2">
                 </label>
                 <label>Дети:
-                    <input type="number" name="adult" value="0"><!-- -->
-                </label>
+                    <input type="number" name="adult" value="0">
+                </label>-->
+                <p>
+                    <label for="amount-adult">Взрослые:</label>
+                    <button type="button" class="minus" id="adult-minus">-</button>
+                    <input type="text" class="amount" value="2" id="amount-adult" readonly>
+                    <button type="button" class="plus" id="adult-plus">+</button>
+                    <label for="amount-adult">Дети:</label>
+                    <button type="button" class="minus" id="children-minus">-</button>
+                    <input type="text" class="amount" value="0" id="amount-adult" readonly>
+                    <button type="button" class="plus" id="children-plus">+</button>
+                </p>
                 <button type="submit" class="submit-search-form btn">Найти</button><!-- -->
             </form>
-            <img class="map" src="img/" alt="" width="" height="">
+            <img class="map" src="img/map.jpg" alt="Карта" width="" height="">
         </section>
     </main>
     <footer class="page-footer">
@@ -99,13 +112,21 @@
             #visitsedona<!-- -->
         </div>
         <ul class="social-net-list">
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Youtube</a></li>
+            <li>
+                <a class="social-net-btn twitter" href="#">Twitter</a>
+            </li>
+            <li>
+                <a class="social-net-btn fb" href="#">Facebook</a>
+            </li>
+            <li>
+                <a class="social-net-btn youtube" href="#">Youtube</a>
+            </li>
         </ul>
-        <div class="designed-by">
-            <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss">HTMLacademy</a></p>
-        </div>
+        <p class="designed-by">Website by 
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/logo-htmlacademy.svg" width="115" height="40" alt="HTMLacademy">
+            </a>
+        </p>
     </footer>
   </body>
 </html>
