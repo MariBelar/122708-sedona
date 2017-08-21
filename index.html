@@ -74,36 +74,37 @@
             </ol>
         </section>
         <section class="index-search">
+            <h2 class="">Поиск гостиницы</h2>
             <p><b>Заинтересовались?</b></p>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <button type="button" class="close-search-form btn">Поиск гостиницы в Седоне</button>
-            <form class="index-search-form" action="#" method="get">
-                <label for="check-in-data">Дата заезда:
-                    <input type="text" name="check-in-data" id="check-in-data" placeholder="24 Апреля 2017">
-                    <button type="button" class="calendar" id="calendar-1"></button>
-                </label>
-                <label for="check-out-data">Дата выезда:
-                    <input type="text" name="check-out-data" id="check-out-data" placeholder="4 июля 2017">
-                    <button type="button" class="calendar" id="calendar-2"></button>
-                </label>
-                <!--<label>Взрослые:
-                    <input type="number" name="adult" value="2">
-                </label>
-                <label>Дети:
-                    <input type="number" name="adult" value="0">
-                </label>-->
-                <p>
-                    <label for="amount-adult">Взрослые:</label>
-                    <button type="button" class="minus" id="adult-minus">-</button>
-                    <input type="text" class="amount" value="2" id="amount-adult" readonly>
-                    <button type="button" class="plus" id="adult-plus">+</button>
-                    <label for="amount-adult">Дети:</label>
-                    <button type="button" class="minus" id="children-minus">-</button>
-                    <input type="text" class="amount" value="0" id="amount-adult" readonly>
-                    <button type="button" class="plus" id="children-plus">+</button>
-                </p>
-                <button type="submit" class="submit-search-form btn">Найти</button><!-- -->
-            </form>
+            <div class="pop-up">
+                <form class="index-search-form" action="#" method="get">
+                    <p>
+                        <label for="check-in-data">Дата заезда:</label>
+                        <input type="text" name="check-in-data" id="check-in-data" placeholder="24 Апреля 2017">
+                        <button type="button" class="calendar" id="calendar-1"></button>
+                    </p>
+                    <p>
+                        <label for="check-out-data">Дата выезда:</label>
+                        <input type="text" name="check-out-data" id="check-out-data" placeholder="4 июля 2017">
+                        <button type="button" class="calendar" id="calendar-2"></button>
+                    </p>
+                    <p>
+                        <label for="amount-adult">Взрослые:</label>
+                        <button type="button" class="minus" id="adult-minus">-</button>
+                        <input type="text" class="amount" value="2" id="amount-adult" readonly>
+                        <button type="button" class="plus" id="adult-plus">+</button>
+                        <label for="amount-adult">Дети:</label>
+                        <button type="button" class="minus" id="children-minus">-</button>
+                        <input type="text" class="amount" value="0" id="amount-children" readonly>
+                        <button type="button" class="plus" id="children-plus">+</button>
+                    </p>
+                    <p>
+                        <button type="submit" class="submit-search-form btn">Найти</button><!-- -->
+                    </p>
+                </form>
+            </div>
             <img class="map" src="img/map.jpg" alt="Карта" width="" height="">
         </section>
     </main>
