@@ -1,0 +1,53 @@
+body {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.2em;
+	font-weight: normal;
+	color: #333;
+}
+
+.features h2 {
+	text-transform: uppercase;
+}
+
+p.subheader,
+.features-list h3,
+.advices-list h3 {
+	font-size: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+}
+
+/*.feature-item-img h3 {
+	color: #fff;
+}*/
+
+/*.social-net-list {
+	list-style-type: none;
+}
+
+.social-net-list li {
+}
+
+.social-net-btn {
+	font-size: 0;
+	display: block;
+	width: 47px;
+	height: 48px;
+	background-color: #81b3d2;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.twitter {
+	background-image: url(../img/twitter.svg);
+}
+
+.fb {
+	background-image: url(../img/fb-icon.svg);
+}
+
+.youtube {
+	background-image: url(../img/youtube.svg);
+}*/
